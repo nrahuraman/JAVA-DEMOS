@@ -1,0 +1,66 @@
+import java.io.*;
+import java.util.*;
+
+class Mapdemo
+{
+	
+	public static void main(String args[])
+	{
+		Scanner sc =new Scanner(System.in);
+		Hashmapdemo obj1=new Hashmapdemo();
+		Hashtabledemo obj2=new Hashtabledemo();
+	}
+}
+
+
+class Hashmapdemo extends Mapdemo
+{
+	public Hashmapdemo()
+	{
+		int n;
+		String in;
+		
+		Map<String> hp=new HashMap<String>();
+		
+		System.out.println("ENTER THE NO OF INPUTS");
+		n=sc.nextInt();
+		
+		System.out.println("ENTER THE INPUTS");
+		while(n>0)
+		{
+			in=sc.next();
+			hp.put(in);
+			n--;
+		}
+
+		Iterator<String> itr=hp.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next())
+		}
+	}
+
+}
+
+class Hashtabledemo extends Mapdemo
+{
+	public Hashtabledemo()
+	{
+		int n;
+		String in;
+		Map<String> ht=new HashTable<String>();
+		
+		System.out.println("ENTER THE NO OF INPUTS");
+		n=sc.nextInt();
+
+		System.out.println("ENTER THE INPUTS");
+		while(n>0)
+		{
+			in=sc.next();
+			ht.put(in);
+			n--;
+		}
+
+		System.out.println(ht);
+	}
+}

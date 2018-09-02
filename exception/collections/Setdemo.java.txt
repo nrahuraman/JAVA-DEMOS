@@ -1,0 +1,44 @@
+import java.io.*;
+import java util.*;
+
+
+class Setdemo
+{
+	Scanner sc=new Scanner(System.in);
+	public static void main(String args[])
+	{
+		Hashsetdemo obj1=new Hashsetdemo();
+		//Treesetdemo obj2=new Treesetdemo();
+		//Linkedhashset obj3=new Linkedhashset();
+
+	}
+}
+
+
+class Hashsetdemo
+{
+	public Hashsetdemo()
+	{
+		Set<String> hs=new HashSet<String>();
+		int n;
+		String in;
+	
+		System.out.println("ENTER THE NO OF INPUTS");
+		n=sc.nextInt();
+
+		System.out.println("ENTER THE INPUTS");
+		while(n>0)
+		{
+			in=sc.next();
+			hs.add(in);
+			n--;
+		}
+		
+		//ADVANCE FOR LOOP
+		
+		for(String i:hs)
+		{
+			System.out.println(i);
+		}
+	}
+}
